@@ -23,3 +23,16 @@ $("input[type='text']").keypress(function(event){
 		}
 	}
 })
+
+$('h1').on('click','.fa-chevron-up',function(){
+	$("input[type='text']").fadeOut();
+	$('.fa-chevron-up').addClass('fa-chevron-down');
+	$('.fa-chevron-down').removeClass('fa-chevron-up');
+})
+
+$('h1').on('click','.fa-chevron-down',function(){
+	console.log('clicked');
+	$("input[type='text']").show(100);
+	$('.fa-chevron-down').addClass('fa-chevron-up');
+	$('.fa-chevron-up').removeClass('fa-chevron-down');
+});

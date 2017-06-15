@@ -40,6 +40,10 @@ li:hover span{
 	float: right;
 }
 
+.fa-chevron-up{
+	float: right;
+}
+
 h1{
 	background-color: #2980b9;
 	color: white;
